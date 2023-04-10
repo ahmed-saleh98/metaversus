@@ -8,7 +8,6 @@ export default function Document() {
           rel="stylesheet"
           href="https://stijndv.com/fonts/Eudoxus-Sans.css"
         />
-        <link rel="stylesheet" href="../styles/globals.css" />
       </Head>
       <body>
         <Main />
