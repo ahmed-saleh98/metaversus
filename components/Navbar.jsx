@@ -8,13 +8,13 @@ import { navVariants } from '@/utils/motion';
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
-  // useEffect(() => {
-  //   const navBar = document.querySelector('.navbar');
-  //   const navIcon = document.querySelector('.navIcon');
-  //   document.onclick = (e) => {
-  //     e.target !== navBar && e.target !== navIcon ? setIsNavOpen(false) : null;
-  //   };
-  // }, []);
+  useEffect(() => {
+    const navBar = document.querySelector('.navbar');
+    const navIcon = document.querySelector('.navIcon');
+    document.onclick = (e) => {
+      e.target !== navBar && e.target !== navIcon ? setIsNavOpen(false) : null;
+    };
+  }, []);
 
   return (
     <motion.nav
