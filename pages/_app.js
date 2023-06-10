@@ -1,5 +1,5 @@
 import Head from 'next/head';
-
+import { Analytics } from '@vercel/analytics/react';
 import '../styles/globals.css';
 
 const MyApp = ({ Component, pageProps }) => (
@@ -11,6 +11,7 @@ const MyApp = ({ Component, pageProps }) => (
       <link rel="preconnect" href="https://stijndv.com" />
     </Head>
     <Component {...pageProps} />
+    <Analytics />
   </>
 );
 
